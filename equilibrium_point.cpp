@@ -7,15 +7,15 @@ int equilibriumPoint(long long a[], int n) {
         if(n == 1)
             return 1;
         
-        long long s1 = a[0], s2 = 0;
+        long long s1 = a[0], s2 = 0;  // finding left and right sum 
         for(int i = 2; i < n; i++)
             s2 += a[i];
         
-        for(int i = 1; i<(n-1); i++) {
+        for(int i = 1; i<(n-1); i++) {  
             if(s1 == s2) {
                 return i+1;
             }
-            else {
+            else {  // updating left and right sum
                 s1 += a[i];
                 s2 -= a[i+1];
             }

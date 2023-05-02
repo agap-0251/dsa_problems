@@ -12,7 +12,7 @@ class Solution {
                 ++cnt;
             }
         }
-        for(int i =cnt;i<nums.length;i++)
+        for(int i = cnt; i < nums.length; i++)
             nums[i]=0;
         
     }
